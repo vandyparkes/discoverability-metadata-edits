@@ -1,0 +1,95 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  color: #191919;
+  background: #ffffff;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.5;
+}
+
+a {
+  color: #8c1d40;
+}
+
+.site-header,
+.site-footer {
+  padding: 1rem;
+  background: #f7f7f7;
+}
+
+.site-header {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.site-logo {
+  font-weight: 700;
+  text-decoration: none;
+}
+
+nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+main {
+  width: min(100% - 2rem, 72rem);
+  margin-inline: auto;
+}
+
+.hero {
+  display: grid;
+  gap: 1.5rem;
+  align-items: center;
+  padding-block: 2rem;
+}
+
+.hero img {
+  inline-size: 100%;
+  block-size: auto;
+  border-radius: .5rem;
+}
+
+.section {
+  padding-block: 2rem;
+}
+
+.session-card {
+  padding: 1rem;
+  margin-block: 1rem;
+  border: 1px solid #d0d0d0;
+  border-radius: .5rem;
+}
+
+.button {
+  display: inline-block;
+  padding: .65rem 1rem;
+  border-radius: .5rem;
+  color: #ffffff;
+  background: #8c1d40;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.eyebrow {
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+@media (min-width: 52rem) {
+  .hero {
+    grid-template-columns: 1fr 1fr;
+  }
+}
